@@ -28,12 +28,12 @@ public class ClienteDAO implements CRUD<Cliente, Long> {
 		return (List<Cliente>) query.getResultList();
 	}
 
-	@Override
+	@Override //salva
 	public void insere(Cliente cliente) {
 		entityManager.persist(cliente);
 	}
 
-	@Override
+	@Override //
 	public void atualiza(Cliente cliente) {
 		entityManager.merge(cliente);
 	}
