@@ -12,7 +12,7 @@ import br.com.springboot.model.Cliente;
 @Service
 public class ClienteBO implements CRUD<Cliente, Long> {
 
-	@Autowired
+	@Autowired //injetar a dependencia, nao precisa estanciar
 	private ClienteDAO dao;
 
 	@Override

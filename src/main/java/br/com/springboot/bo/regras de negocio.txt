@@ -1,0 +1,24 @@
+No padrão MVC (Model-View-Controller) do Spring Boot, o BO 
+(Business Object)
+é um componente responsável por implementar as regras de
+ negócio da aplicação.
+
+O BO é parte da camada de modelo (Model) e, portanto, representa
+ a lógica de 
+negócio da aplicação. Ele é responsável por implementar as operações
+ de validação, 
+processamento e manipulação de dados necessárias para atender aos 
+requisitos do negócio.
+
+O Spring Boot não define um papel específico para o BO, mas ele 
+pode ser usado 
+para implementar a camada de serviço (Service Layer) da aplicação,
+ que é responsável
+ por orquestrar as chamadas entre a camada de controle (Controller)
+  e a camada de acesso
+  a dados (Data Access Layer).
+
+Assim, o BO desempenha um papel importante na arquitetura MVC do
+ Spring Boot,
+ ajudando a separar as preocupações de negócio da lógica de 
+ apresentação e de acesso a dados.

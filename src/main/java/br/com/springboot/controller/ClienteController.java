@@ -17,7 +17,7 @@ import br.com.springboot.bo.ClienteBO;
 import br.com.springboot.model.Cliente;
 
 @Controller
-@RequestMapping("/clientes")
+@RequestMapping("/clientes") //aciona esse controlador
 public class ClienteController {
 	
 	@Autowired

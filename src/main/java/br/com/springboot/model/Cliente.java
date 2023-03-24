@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name = "clientes")
 public class Cliente {
@@ -19,6 +20,7 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(nullable = false, length = 50)
+	
 	private String nome;
 	@Column(length = 11)
 	private String cpf;
@@ -34,7 +36,6 @@ public class Cliente {
 	@Column(length = 50)
 	private String email;
 	private boolean ativo;
-
 
 	public Long getId() {
 		return this.id;
